@@ -20,7 +20,7 @@ function operate(operator, a, b) {
             return add(a, b);
         case "-":
             return subtract(a, b);
-        case "×":
+        case "x":
             return multiply(a, b);
         case "÷":
             return divide(a, b);
