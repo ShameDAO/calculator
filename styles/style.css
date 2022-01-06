@@ -36,17 +36,17 @@ body {
 
 .screen {
     margin: 0 0 20px 0px;
-    padding: 10px 15px;
-    /* border-bottom: 2px solid darkgrey; */
+    padding: 10px 12px;
     border-radius: 15px;
-    /* background-color: var(--screen-color); */
     height: 200px;
     text-align: right;
+    word-wrap: break-word;
 }
 
 .top-line {
-    font-size: 30px;
+    font-size: 25px;
     color: rgb(128, 128, 128);
+    min-height: 35px;
 }
 
 .bottom-line {
@@ -68,6 +68,7 @@ body {
     border-radius: 5px;
 }
 
+.edit-btn,
 .op-btn {
     background-color: var(--op-btn-color);
 }
@@ -80,6 +81,7 @@ body {
     background-color: var(--equals-btn-color);
 }
 
+.edit-btn:hover,
 .op-btn:hover {
     background-color: var(--num-btn-color);
 }
