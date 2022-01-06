@@ -101,7 +101,7 @@ function storeOp(event, typed = false) {
 }
 
 function add(a, b) {
-    return a + b;
+    return +a + +b;
 }
 
 function subtract(a, b) {
@@ -188,7 +188,7 @@ function typeInput(event) {
         }
         storeOp(keyPressed, true);
     } 
-    else if (keyPressed === "=" || keyPressed === "Enter") {
+    else if (keyPressed === "=") {
         evaluate(answerNum, tempNumStr, operation);
     } else if (keyPressed === "Escape") {
         resetCalc();
