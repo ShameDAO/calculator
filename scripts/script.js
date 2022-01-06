@@ -175,7 +175,7 @@ function roundNumber(number) {
 
 function typeInput(event) {
     let keyPressed = event.key;
-    if (/[0-9]/.test(keyPressed)) storeNum(keyPressed, true);
+    if (/^[0-9]+$/.test(keyPressed)) storeNum(keyPressed, true);
     else if (/[-+*\/x]/.test(keyPressed)) {
         switch (keyPressed) {
             case "*":
