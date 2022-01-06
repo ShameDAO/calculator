@@ -161,10 +161,13 @@ function evaluate(answerNum, tempNumStr, operation) {
 
 // round number to 10 dp 
 function roundNumber(number) {
-    
-    if (number.toString().length > maxChars) {
+    if (number.toString().length > maxChars) { 
         console.log(number);
-        return (+number).toFixed(maxChars - 2);
+        if (number.toString().includes(".")) { // Round floating number to 10dp
+            return (+number).toFixed(maxChars - 2);
+        } else { // large number
+            return number.toExponential();
+        } 
     } else {
         return number;
     }
